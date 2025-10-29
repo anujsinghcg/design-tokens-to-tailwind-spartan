@@ -1,0 +1,17 @@
+
+{
+  "color": {
+    "primary": {
+      "value": "#1D4ED8"
+    },
+    "secondary": {
+      "value": "#9333EA"
+    },
+     "togglelight": {
+      "value": "#737373"
+    },
+     "toggledark": {
+      "value": "#1d1d1d"
+    }
+  }
+}

@@ -1,0 +1,211 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.5.3",
+  "pathMappings": {
+    "@spartan-ng/helm/button": [
+      "./libs/ui/ui-button-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/utils": [
+      "./libs/ui/ui-button-helm/src/lib/utils.ts"
+    ],
+    "@spartan-ng/helm/accordion": [
+      "./libs/ui/ui-accordion-helm/src/index.ts"
+    ],
+    "@spartan-ng/helm/icon": [
+      "./libs/ui/ui-icon-helm/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "token-poc": [
+        {
+          "file": ".editorconfig",
+          "hash": "8037249353422744134"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "10175894702052279752"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "11934160580685414355"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17406702432687230417"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "10093397977228577162"
+        },
+        {
+          "file": "README.md",
+          "hash": "5300358366016408391"
+        },
+        {
+          "file": "angular.json",
+          "hash": "8074332970362046090"
+        },
+        {
+          "file": "components.json",
+          "hash": "16224180875073320387"
+        },
+        {
+          "file": "libs/ui/ui-accordion-helm/src/index.ts",
+          "hash": "17637945804020660147"
+        },
+        {
+          "file": "libs/ui/ui-accordion-helm/src/lib/hlm-accordion-content.ts",
+          "hash": "1495584871376562370"
+        },
+        {
+          "file": "libs/ui/ui-accordion-helm/src/lib/hlm-accordion-icon.ts",
+          "hash": "16708431098242100477"
+        },
+        {
+          "file": "libs/ui/ui-accordion-helm/src/lib/hlm-accordion-item.ts",
+          "hash": "12428108399774511704"
+        },
+        {
+          "file": "libs/ui/ui-accordion-helm/src/lib/hlm-accordion-trigger.ts",
+          "hash": "17570909657283432129"
+        },
+        {
+          "file": "libs/ui/ui-accordion-helm/src/lib/hlm-accordion.ts",
+          "hash": "7062336180335675043"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/index.ts",
+          "hash": "10389708457736715240"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/lib/hlm-button.token.ts",
+          "hash": "13515884188584217050"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/lib/hlm-button.ts",
+          "hash": "669154483242720991"
+        },
+        {
+          "file": "libs/ui/ui-button-helm/src/lib/utils.ts",
+          "hash": "11147320200304140091"
+        },
+        {
+          "file": "libs/ui/ui-icon-helm/src/index.ts",
+          "hash": "4204636579792501988"
+        },
+        {
+          "file": "libs/ui/ui-icon-helm/src/lib/hlm-icon.token.ts",
+          "hash": "7365102722062103929"
+        },
+        {
+          "file": "libs/ui/ui-icon-helm/src/lib/hlm-icon.ts",
+          "hash": "11496068464699763599"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "12995659010408080488"
+        },
+        {
+          "file": "package.json",
+          "hash": "7000168942048096242",
+          "deps": [
+            "npm:@angular-devkit/build-angular",
+            "npm:@angular/cli",
+            "npm:@angular/compiler-cli",
+            "npm:@spartan-ng/cli",
+            "npm:@types/jasmine",
+            "npm:autoprefixer",
+            "npm:jasmine-core",
+            "npm:karma",
+            "npm:karma-chrome-launcher",
+            "npm:karma-coverage",
+            "npm:karma-jasmine",
+            "npm:karma-jasmine-html-reporter",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:tailwindcss-animate",
+            "npm:typescript",
+            "npm:@angular/cdk",
+            "npm:@angular/common",
+            "npm:@angular/compiler",
+            "npm:@angular/core",
+            "npm:@angular/forms",
+            "npm:@angular/platform-browser",
+            "npm:@angular/platform-browser-dynamic",
+            "npm:@angular/router",
+            "npm:@ng-icons/core",
+            "npm:@ng-icons/lucide",
+            "npm:@spartan-ng/brain",
+            "npm:@spartan-ng/ui-core",
+            "npm:class-variance-authority",
+            "npm:clsx",
+            "npm:rxjs",
+            "npm:tailwind-merge",
+            "npm:tslib",
+            "npm:zone.js"
+          ]
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "src/app/app.component.html",
+          "hash": "6183382616434980605"
+        },
+        {
+          "file": "src/app/app.component.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "src/app/app.component.spec.ts",
+          "hash": "10440926848316732271"
+        },
+        {
+          "file": "src/app/app.component.ts",
+          "hash": "2681579097335128440"
+        },
+        {
+          "file": "src/app/app.config.ts",
+          "hash": "16561019206697382666"
+        },
+        {
+          "file": "src/app/app.routes.ts",
+          "hash": "809736233805555256"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "12140745423331284229"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "4169901790405087765"
+        },
+        {
+          "file": "src/styles.css",
+          "hash": "10469033450819180877"
+        },
+        {
+          "file": "tailwind.config.js",
+          "hash": "1310796604865725025"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "14560978611694835822"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "8880376156612457489"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "11023685540591620072"
+        }
+      ]
+    },
+    "nonProjectFiles": []
+  },
+  "externalNodesHash": "6618217937582534712"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@org/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {
+    "@analogjs/platform": "1.21.1"
+  },
+  "devDependencies": {
+    "@nx/workspace": "21.5.3",
+    "nx": "21.5.3"
+  }
+}

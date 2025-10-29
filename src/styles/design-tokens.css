@@ -1,0 +1,10 @@
+:root {
+  --colors-font-base-value: #111111;
+  --colors-font-base-type: color;
+  --colors-font-secondary-value: #333333;
+  --colors-font-secondary-type: color;
+  --colors-font-tertiary-value: #666666;
+  --colors-font-tertiary-type: color;
+  --colors-font-inverse-base-value: #ffffff;
+  --colors-font-inverse-base-type: color;
+}

@@ -1,0 +1,25 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "css": {
+      "transformGroup": "css",
+      "buildPath": "src/styles/tokens/",
+      "files": [
+        {
+          "destination": "variables.css",
+          "format": "css/variables"
+        }
+      ]
+    },
+    "scss": {
+      "transformGroup": "scss",
+      "buildPath": "src/styles/tokens/",
+      "files": [
+        {
+          "destination": "angular-theme-variables.scss",
+          "format": "scss/variables"
+        }
+      ]
+    }
+  }
+}

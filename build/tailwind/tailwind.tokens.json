@@ -1,0 +1,13 @@
+{
+  "color": {
+    "primary": {
+      "value": "#6200ee"
+    },
+    "accent": {
+      "value": "#03dac6"
+    },
+    "warn": {
+      "value": "#b00020"
+    }
+  }
+}
