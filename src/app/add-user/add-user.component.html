@@ -2,90 +2,91 @@
   <div class="bg-(--colors-secondary) text-(--color-togglelight) dark:bg-(--colors-font-tertiary) dark:text-(--colors-dark-white)" >
     <div class="grid grid-cols-6" >
     <div class="col-start-2 col-span-4 ">
-        <label class="flex items-center add-usertoggle hlmLabel text-(--colors-light-blacktext) bg-background dark:text-(--colors-dark-subtext)">
+        <label class="flex items-center justify-end py-3 add-usertoggle hlmLabel text-(--colors-light-blacktext) bg-background dark:text-(--colors-dark-subtext)">
 			<hlm-switch class="mr-2" (click)="toggleTheme()"/>
-			Change mode1
+      <app-typography [level]="'p'" class="text-center" [label]="'Change mode1'"></app-typography>
 		</label>        
          
-        <h1 hlmH1 class="text-center mt-8 text-(--color-primary)  dark:text-(--color-secondary) ">Add A User</h1>
-        <p class="${hlmP} text-center">The Court - Sesion 1</p>
+        <app-typography [level]="'h1'" class="text-center dsffddfsdfs mt-8 text-(--color-primary)  dark:text-(--color-secondary)" [label]="'Add A User'"></app-typography>
+        <app-typography [level]="'p'" class="text-center" [label]="'The Court - Sesion 1'"></app-typography>
         <div class="calender flex justify-end grid-cols-12 mb-3">
-          <p class="${hlmP} col-span-12 text-end">Subscription Date</p>
-       <app-datepicker ></app-datepicker>
+        <app-typography [level]="'p'" class="col-span-12 text-end" [label]="'Subscription Date'"></app-typography>
+        <app-datepicker ></app-datepicker>
         </div>
         <div class="form-wrap bg-white p-[26px] mb-[71px] border border-gray-300 rounded-md">
         <div class="grid grid-cols-12 gap-4 pb-[26px]">
             <div class="col-span-6">
-            <hlm-form-field>
-                <input class="w-80" hlmInput type="text" placeholder="First Name" />
-            </hlm-form-field>
+            <app-inputs class="w-80 bg-(--primary)" placeholder="First Name"></app-inputs>
             </div>
             <div class="col-span-6">
-            <hlm-form-field>
-                <input class="w-80" hlmInput type="text" placeholder="Last Name" />
-            </hlm-form-field>
+            <app-inputs class="w-80 bg-(--primary) border-pink-300" placeholder="Last Name"></app-inputs>
             </div>
             <div class="col-span-6">
-            <hlm-form-field>
-                <input class="w-80" hlmInput type="email" placeholder="Email" />
-            </hlm-form-field>
+            <app-form-field class="bg-(--primary) mb-0" placeholder="Email"></app-form-field>
             </div>
             <div class="col-span-6">
-            <hlm-form-field>
-                <input class="w-80" hlmInput type="text" placeholder="Job Title" />
-            </hlm-form-field>
+            <app-inputs class="w-80 bg-(--primary)" placeholder="Job Title"></app-inputs>
             </div>
             <div class="col-span-6">
-            <hlm-form-field>
-                <input class="w-80" hlmInput type="text" placeholder="Phone" />
-            </hlm-form-field>
+            <app-inputs class="w-80 bg-(--primary)" placeholder="Phone"></app-inputs>
             </div>
         </div>
-        <h4 class="${hlmH4} pb-[26px]">Optional Settings</h4>
+        <app-typography [level]="'h4'" class="pb-[26px]" [label]="'Optional Settings'"></app-typography>
         <div class="col-span-12 space-y-2 pb-[26px]">
-          <div class="flex items-center gap-3">
-                <hlm-checkbox id="comp1" />
-                <label hlmLabel for="comp1">Make the user a company admin</label>
-            </div>
+          <app-checkbox 
+          [id]="'term1'"
+          [name]="'term1'"
+          [label]="'Accept terms and conditions'"
+          class="w-80 bg-(--primary)" [checked]="true"></app-checkbox>
         </div>
         <div class="col-span-12 space-y-2">
-            <div class="flex items-center gap-3">
-                <hlm-checkbox id="comp2" />
-                <label hlmLabel for="comp2">User is an Account Payable user</label>
-            </div>
+          <app-checkbox 
+          [id]="'term2'"
+          [name]="'term2'"
+          [label]="'User is an Account Payable user'"
+          class="w-80 bg-(--primary)" [checked]="false"></app-checkbox>
         </div>
         </div>
         <div class="form-wrap bg-white p-[26px] mb-[71px] border border-gray-300 rounded-md">
-            <h4 class="${hlmH4} pb-[26px]">Department Access</h4>
+            <app-typography [level]="'h4'" class="pb-[26px]" [label]="'Department Access'"></app-typography>
             <div class="grid grid-cols-3 gap-x-[70px]">
               <div class="flex flex-col gap-6">
                   <div class="flex items-center gap-3">
-                      <hlm-checkbox id="terms1" />
-				              <label hlmLabel for="terms1">Accept terms and conditions</label>
+                      <app-checkbox 
+                      [id]="'term3'"
+                      [name]="'term3'"
+                      [label]="'Accept terms and conditions'"
+                      class="w-80 " [checked]="false"></app-checkbox>
                   </div>
               </div>
               <div class="flex flex-col gap-6">
                   <div class="flex items-center gap-3">
-                      <hlm-checkbox id="terms2" />
-				              <label hlmLabel for="terms2">Accept terms and conditions</label>
+                      <app-checkbox 
+                      [id]="'term4'"
+                      [name]="'term4'"
+                      [label]="'Accept terms and conditions'"
+                      class="w-80 bg-(--primary)" [checked]="false"></app-checkbox>
                   </div>
               </div>
               <div class="flex flex-col gap-6">
                   <div class="flex items-center gap-3">
-                      <hlm-checkbox id="terms3" />
-				              <label hlmLabel for="terms3">Accept terms and conditions</label>
+                      <app-checkbox 
+                      [id]="'term5'"
+                      [name]="'term5'"
+                      [label]="'Accept terms and conditions'"
+                      class="w-80" [checked]="false"></app-checkbox>
                   </div>
               </div>
             </div>
         </div>
         <div class="form-wrap bg-white p-[26px] border border-gray-300 rounded-md">
-          <h4 class="${hlmH4} pb-[26px]">Sections & Permissions</h4>
+          <app-typography [level]="'h4'" class="pb-[26px]" [label]="'Sections & Permissions'"></app-typography>
           <div class="grid grid-rows-2 grid-flow-col flex items-center justify-between rounded-[16px] mb-4 px-3 py-4 shadow-sm border border-slate-300">
             <div class="col-span-2 ...">
-              <h4 class="${hlmH4}">Project</h4>
+              <app-typography [level]="'h4'" class="pb-3 text-green-700" [label]="'Project'"></app-typography>
             </div>
             <div class="row-span-2 col-span-2 ...">
-              <p>Can View</p>
+              <app-typography [level]="'p'" class="pb-0" [label]="'Can View'"></app-typography>
             </div>
             <div class="row-span-3 ..."><label class="flex items-center" hlmLabel>
 			<hlm-switch class="mr-2" /></label></div>
@@ -93,10 +94,10 @@
 
           <div class="grid grid-rows-2 grid-flow-col flex items-center justify-between rounded-[16px] mb-4 px-3 py-4 shadow-sm border border-slate-300">
             <div class="col-span-2 ...">
-              <h4 class="${hlmH4}">Service Request</h4>
+              <app-typography [level]="'h4'" class="pb-2 text-(--color-secondary)" [label]="'Service Request'"></app-typography>
             </div>
             <div class="row-span-2 col-span-2 ...">
-              <p>Receive emails about your account security.</p>
+              <app-typography [level]="'p'" class="font-bold" [label]="'Receive emails about your account security.'"></app-typography>
             </div>
             <div class="row-span-3 ..."><label class="flex items-center" hlmLabel>
 			<hlm-switch class="mr-2" /></label></div>

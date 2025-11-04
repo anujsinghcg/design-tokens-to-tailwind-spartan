@@ -3,7 +3,7 @@
  */
 
 :root {
-  --color-primary: #1D4ED8;
+  --color-primary: oklch(0.00% 0.000 0);
   --color-secondary: #9333EA;
   --color-togglelight: #737373;
   --color-toggledark: #1d1d1d;

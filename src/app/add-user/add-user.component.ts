@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, Renderer2 } from '@angular/core';
 import { hlmH1, hlmH2, hlmH3, hlmH4, hlmP, HlmTypographyImports } from '@spartan-ng/helm/typography';
 
 import { HlmFormFieldImports } from '@spartan-ng/helm/form-field';
@@ -17,10 +17,17 @@ import { BrnPopoverImports } from '@spartan-ng/brain/popover';
 import { HlmPopoverImports } from '@spartan-ng/helm/popover';
 import { HlmDatePickerImports, provideHlmDatePickerConfig } from '@spartan-ng/helm/date-picker';
 import { DatepickerComponent } from '../datepicker/datepicker.component';
+import { InputsComponent } from '../shared/ui/inputs/inputs.component';
+import { FormFieldComponent } from '../shared/ui/form-field/form-field.component';
+import { CheckboxComponent } from '../shared/ui/checkbox/checkbox.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { TypographyComponent } from '../shared/ui/typography/typography.component';
 @Component({
   selector: 'app-add-user',
   standalone: true,
-  imports: [DatepickerComponent,HlmPopoverImports,BrnPopoverImports,HlmDatePickerImports,HlmFormFieldImports, HlmCalendarImports,HlmInputImports, HlmCheckboxImports, HlmLabelImports, HlmLabel, HlmSwitch, BrnSelectImports, HlmSelectImports,HlmTypographyImports],
+  imports: [CommonModule, FormsModule, DatepickerComponent,HlmPopoverImports,BrnPopoverImports,HlmDatePickerImports,HlmFormFieldImports, HlmCalendarImports,HlmInputImports, HlmCheckboxImports, HlmLabelImports, HlmLabel, HlmSwitch, BrnSelectImports, HlmSelectImports,HlmTypographyImports,FormFieldComponent, InputsComponent, CheckboxComponent, TypographyComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './add-user.component.html',
   providers: [
 		provideHlmDatePickerConfig({

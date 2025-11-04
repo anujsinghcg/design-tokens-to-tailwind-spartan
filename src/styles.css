@@ -6,8 +6,8 @@
  /* @import url('./styles/design-tokens.css'); */
 
  /* @import "@spartan-ng/brain/hlm-tailwind-preset.css";  */
-
-/* :root {
+@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+:root {
   color-scheme: light;
   --font-sans: 'Geist Sans', sans-serif;
   --radius: 0.625rem;
@@ -67,7 +67,7 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.439 0 0);
-} */
+}
 /* 
 @import 'tailwindcss'; */
 
