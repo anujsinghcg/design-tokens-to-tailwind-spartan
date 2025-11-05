@@ -29,7 +29,12 @@ module.exports = {
     
     extend: {
       ...(tokens?.theme?.extend || {}),
-      colors: tokens.color,
+      
+colors: {
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)'
+      },
+
       spacing: tokens.spacing
     }
   },

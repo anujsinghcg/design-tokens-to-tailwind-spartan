@@ -17,10 +17,15 @@ import { BrnPopoverImports } from '@spartan-ng/brain/popover';
 import { HlmPopoverImports } from '@spartan-ng/helm/popover';
 import { HlmDatePickerImports, provideHlmDatePickerConfig } from '@spartan-ng/helm/date-picker';
 import { DatepickerComponent } from '../datepicker/datepicker.component';
+import { HlmButtonImports } from '@spartan-ng/helm/button';
+import { MyButtonComponent } from '../my-button/my-button.component';
+import { SkeletonPreview } from '../skeleton/skeleton.component';
+import { UserAvatarComponent } from '../avatar/avatar.component';
+import { SpartanUiLibModule } from '../../../../git-repo-31-10/spartan-ui-component-library/projects/spartan-ui-component-lib/src/lib/spartan-ui-lib.module';
 @Component({
   selector: 'app-add-user',
   standalone: true,
-  imports: [DatepickerComponent,HlmPopoverImports,BrnPopoverImports,HlmDatePickerImports,HlmFormFieldImports, HlmCalendarImports,HlmInputImports, HlmCheckboxImports, HlmLabelImports, HlmLabel, HlmSwitch, BrnSelectImports, HlmSelectImports,HlmTypographyImports],
+  imports: [SpartanUiLibModule,UserAvatarComponent,SkeletonPreview,MyButtonComponent,HlmButtonImports,DatepickerComponent,HlmPopoverImports,BrnPopoverImports,HlmDatePickerImports,HlmFormFieldImports, HlmCalendarImports,HlmInputImports, HlmCheckboxImports, HlmLabelImports, HlmLabel, HlmSwitch, BrnSelectImports, HlmSelectImports,HlmTypographyImports],
   templateUrl: './add-user.component.html',
   providers: [
 		provideHlmDatePickerConfig({
@@ -148,7 +153,8 @@ import { DatepickerComponent } from '../datepicker/datepicker.component';
 })
 export class AddUserComponent {
   public minDate = new Date(2023, 0, 1);
-
+showUserInfo = true;
+showCard = true;
 	/** The maximum date */
 	public maxDate = new Date(2030, 11, 31);
 selectedDate = new Date(2025, 5, 1); // June 01, 2025

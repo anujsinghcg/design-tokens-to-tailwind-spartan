@@ -1,17 +1,118 @@
-
 {
   "color": {
-    "primary": {
-      "value": "#1D4ED8"
+    "white": {
+      "Light": {
+        "value": "rgba(255,255,255,1)",
+        "comment": ""
+      },
+      "Dark": {
+        "value": "rgba(29,29,29,1)",
+        "comment": ""
+      }
     },
-    "secondary": {
-      "value": "#9333EA"
+    "heading": {
+      "Light": {
+        "value": "rgba(38,38,247,1)",
+        "comment": ""
+      },
+      "Dark": {
+        "value": "rgba(177,177,177,1)",
+        "comment": ""
+      }
     },
-     "togglelight": {
-      "value": "#737373"
+    "Grey": {
+      "Light": {
+        "value": "rgba(228,228,228,1)",
+        "comment": ""
+      },
+      "Dark": {
+        "value": "rgba(0,0,0,1)",
+        "comment": ""
+      }
     },
-     "toggledark": {
-      "value": "#1d1d1d"
+    "Muted-grey": {
+      "Light": {
+        "value": "rgba(115,115,115,1)",
+        "comment": ""
+      },
+      "Dark": {
+        "value": "rgba(202,202,202,1)",
+        "comment": ""
+      }
+    },
+    "Stroke": {
+      "Light": {
+        "value": "rgba(231,231,231,1)",
+        "comment": ""
+      },
+      "Dark": {
+        "value": "rgba(231,231,231,1)",
+        "comment": ""
+      }
+    },
+    "subtext": {
+      "Light": {
+        "value": "rgba(27,27,28,1)",
+        "comment": ""
+      },
+      "Dark": {
+        "value": "rgba(177,177,177,1)",
+        "comment": ""
+      }
+    },
+    "border": {
+      "Light": {
+        "value": "rgba(180,180,180,1)",
+        "comment": ""
+      },
+      "Dark": {
+        "value": "rgba(180,180,180,1)",
+        "comment": ""
+      }
+    }
+  },
+  "size": {
+    "Margin": {
+      "value": "rgba(NaN,NaN,NaN,NaN)",
+      "comment": ""
+    },
+    "Margin-extra": {
+      "value": 30,
+      "comment": ""
+    },
+    "Padding": {
+      "value": 20,
+      "comment": ""
+    },
+    "Margin-small": {
+      "value": 12,
+      "comment": ""
+    },
+    "xs": {
+      "value": 10,
+      "comment": ""
+    },
+    "small": {
+      "value": 14,
+      "comment": ""
+    },
+    "medium": {
+      "value": 16,
+      "comment": ""
+    },
+    "large": {
+      "value": 20,
+      "comment": ""
+    },
+    "xl": {
+      "value": 40,
+      "comment": ""
+    },
+    "Number": {
+      "space": {
+        "value": 10,
+        "comment": ""
+      }
     }
   }
 }
