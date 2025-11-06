@@ -5,10 +5,15 @@
 
  /* @import url('./styles/design-tokens.css'); */
 
- /* @import "@spartan-ng/brain/hlm-tailwind-preset.css";  */
+  @import "@spartan-ng/brain/hlm-tailwind-preset.css";  
 
-/* :root {
-  color-scheme: light;
+/* @layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css"; */
+
+:root {
+  /* color-scheme: light; */
   --font-sans: 'Geist Sans', sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -67,7 +72,8 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.439 0 0);
-} */
+} 
+
 /* 
 @import 'tailwindcss'; */
 
@@ -78,3 +84,15 @@
     --color-secondary: #00ccff;
   }
 } */
+ @layer utilities {
+  .bg-btn-primary {
+    background-color: var( --color-heading-light) !important;
+  }
+  .bg-btn-primary > button {
+    background-color: var( --color-heading-light) !important;
+  }
+
+  .dark .bg-btn-primary {
+    background-color: var( --color-heading-light) !important;
+  }
+}

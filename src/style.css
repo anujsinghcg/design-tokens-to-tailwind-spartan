@@ -1,30 +1,10 @@
 
 // Do not edit directly, this file was auto-generated.
 
-$color-white-light: rgba(255,255,255,1);
-$color-white-dark: rgba(29,29,29,1);
-$color-heading-light: rgba(38,38,247,1);
-$color-heading-dark: rgba(177,177,177,1);
-$color-grey-light: rgba(228,228,228,1);
-$color-grey-dark: rgba(0,0,0,1);
-$color-muted-grey-light: rgba(115,115,115,1);
-$color-muted-grey-dark: rgba(202,202,202,1);
-$color-stroke-light: rgba(231,231,231,1);
-$color-stroke-dark: rgba(231,231,231,1);
-$color-subtext-light: rgba(27,27,28,1);
-$color-subtext-dark: rgba(177,177,177,1);
-$color-border-light: rgba(180,180,180,1);
-$color-border-dark: rgba(180,180,180,1);
-$size-margin: rgba(NaN,NaN,NaN,NaN);
-$size-margin-extra: 30;
-$size-padding: 20;
-$size-margin-small: 12;
-$size-xs: 10;
-$size-small: 14;
-$size-medium: 16;
-$size-large: 20;
-$size-xl: 40;
-$size-number-space: 10;
+$color-primary: #1D4ED8;
+$color-secondary: #9333EA;
+$color-togglelight: #737373;
+$color-toggledark: #1d1d1d;
 $spacing-sm: 8px;
 $spacing-md: 16px;
 $spacing-lg: 32px;

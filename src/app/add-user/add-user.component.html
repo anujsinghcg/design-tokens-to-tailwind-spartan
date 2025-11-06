@@ -1,13 +1,13 @@
 
-  <div class="bg-(--colors-secondary) text-(--color-togglelight) dark:bg-(--colors-font-tertiary) dark:text-(--colors-dark-white)" >
+  <div class="bg-(--colors-secondary) text-(--color-togglelight) dark:bg-(--color-secondary) dark:text-(--colors-dark-white)" >
     <div class="grid grid-cols-6" >
     <div class="col-start-2 col-span-4 ">
-        <label class="flex items-center add-usertoggle hlmLabel text-(--colors-light-blacktext) bg-background dark:text-(--colors-dark-subtext)">
+        <label class="flex items-center add-usertoggle hlmLabel text-(--colors-light-blacktext) dark:bg-(--color-secondary) dark:text-(--colors-dark-subtext)">
 			<hlm-switch class="mr-2" (click)="toggleTheme()"/>
-			Change mode1
+			Change mode
 		</label>        
          
-        <h1 hlmH1 class="text-center mt-8 text-(--color-primary)  dark:text-(--color-secondary) ">Add A User</h1>
+        <h1 hlmH1 class="text-center mt-8 text-(--color-heading-light)  dark:text-(--color-primary) ">Add A User</h1>
         <p class="${hlmP} text-center">The Court - Sesion 1</p>
         <div class="calender flex justify-end grid-cols-12 mb-3">
           <p class="${hlmP} col-span-12 text-end">Subscription Date</p>
@@ -41,7 +41,7 @@
             </hlm-form-field>
             </div>
         </div>
-        <h4 class="${hlmH4} pb-[26px]">Optional Settings</h4>
+        <h4 class="${hlmH4} pb-[26px] text-(--color-heading-light) dark:text-(--color-secondary)">Optional Settings</h4>
         <div class="col-span-12 space-y-2 pb-[26px]">
           <div class="flex items-center gap-3">
                 <hlm-checkbox id="comp1" />
@@ -56,7 +56,7 @@
         </div>
         </div>
         <div class="form-wrap bg-white p-[26px] mb-[71px] border border-gray-300 rounded-md">
-            <h4 class="${hlmH4} pb-[26px]">Department Access</h4>
+            <h4 class="${hlmH4} pb-[26px] text-(--color-heading-light) dark:text-(--color-secondary)">Department Access</h4>
             <div class="grid grid-cols-3 gap-x-[70px]">
               <div class="flex flex-col gap-6">
                   <div class="flex items-center gap-3">
@@ -79,8 +79,8 @@
             </div>
         </div>
         <div class="form-wrap bg-white p-[26px] border border-gray-300 rounded-md">
-          <h4 class="${hlmH4} pb-[26px]">Sections & Permissions</h4>
-          <div class="grid grid-rows-2 grid-flow-col flex items-center justify-between rounded-[16px] mb-4 px-3 py-4 shadow-sm border border-slate-300">
+          <h4 class="${hlmH4} pb-[26px] text-(--color-heading-light) dark:text-(--color-secondary)">Sections & Permissions</h4>
+          <div class="grid grid-rows-2 grid-flow-col  items-center justify-between rounded-2xl mb-4 px-3 py-4 shadow-sm border border-slate-300">
             <div class="col-span-2 ...">
               <h4 class="${hlmH4}">Project</h4>
             </div>
@@ -91,7 +91,7 @@
 			<hlm-switch class="mr-2" /></label></div>
           </div>
 
-          <div class="grid grid-rows-2 grid-flow-col flex items-center justify-between rounded-[16px] mb-4 px-3 py-4 shadow-sm border border-slate-300">
+          <div class="grid grid-rows-2 grid-flow-col  items-center justify-between rounded-2xl mb-4 px-3 py-4 shadow-sm border border-slate-300">
             <div class="col-span-2 ...">
               <h4 class="${hlmH4}">Service Request</h4>
             </div>
@@ -101,8 +101,49 @@
             <div class="row-span-3 ..."><label class="flex items-center" hlmLabel>
 			<hlm-switch class="mr-2" /></label></div>
           </div>
+       
+<button class="bg-btn-primary me-3 mb-4" hlmBtn>Button</button>
+ <app-my-button variant="outline" size="lg" class="bg-btn-primary me-3 mb-4">Click Me</app-my-button>
+        <app-my-button variant="outline" class="text-(--color-heading-light) hover:text-(--color-primary)" title="heading" size="sm">New button</app-my-button>
+      
+      
+      <div class="grid grid-cols-3 gap-4">
+  <div class="border border-gray-200 p-4"> <app-tooltip class="bg-(--color-grey-light) dark:bg-(--color-heading-light) text-blue-600 text-sm px-3 py-2 rounded shadow-lg max-w-xs z-50" message="This is tooltip 1 text">Tooltip 1</app-tooltip></div>
+  <div class="border border-gray-200 p-4"> <app-tooltip class="bg-(--color-heading-light) text-blue-600 text-sm px-3 py-2 rounded shadow-lg max-w-xs z-50" message="Hello from tooltip 2">Tooltip 2</app-tooltip></div>
+  <div class="border border-gray-200 p-4">
+     <div class="grid grid-cols-3 gap-4"><app-user-avatar
+ [src]="'https://untitledui.com/images/avatars/transparent/olivia-rhye'"
+  [alt]="'Spartan logo. Resembling a spartanic shield'"
+  [fallbackText]="'RG'"
+></app-user-avatar>
+<app-user-avatar
+ [src]="'https://untitledui.com/images/avatars/drew-cano'"
+  [alt]="'Spartan logo.'"
+  [fallbackText]="'RG'"
+></app-user-avatar></div></div>
+</div>
+      </div>
+        
+       
+        <!-- <spartan-skeleton-preview class="h-[20px] w-[100px] rounded-full"></spartan-skeleton-preview> -->
+        <!-- <spartan-skeleton-preview class="h-4 w-[200px] rounded-full"></spartan-skeleton-preview> -->
+<!-- <hlm-skeleton class="h-[20px] w-[100px] rounded-full"></hlm-skeleton> -->
+<spartan-skeleton-preview skeletonType="user"></spartan-skeleton-preview>
+  
 
-        </div>
+
+
+  <!-- <app-user-avatar src="../../../assets/avatar.jpg" alt="Spt-white bg-destructive" hlmAvatarFallback>
+   <span class='text-white bg-destructive' hlmAvatarFallback>RG</span></app-user-avatar> -->
+   <spartan-skeleton-preview skeletonType="card"></spartan-skeleton-preview>
+
+<!--    
+<app-user-avatar>
+  <img src="assets/avatar.png" alt="Spt-white bg-destructive" hlmAvatarFallback>RG</span>
+</app-user-avatar> -->
+
+<!-- <app-user-avatar></app-user-avatar> -->
+       
       </div>
     </div>
 </div>
